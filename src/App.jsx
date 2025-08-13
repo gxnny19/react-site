@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { useState } from "react";
 import "./App.css";
 import Login from "./compo/Login";
@@ -14,9 +13,10 @@ function App() {
       <h1>과제방</h1>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route index element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/react-site/" element={<Layout />} >
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
