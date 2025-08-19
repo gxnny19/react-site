@@ -1,11 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
-    <div>
+    <>
       <h2>홈 페이지 MAIN입니다</h2>
-      {/* 홈 페이지 내용 추가 */}
-    </div>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/work1">Work1</Link></li>
+          <li><Link to="/miniblog">MiniBlog</Link></li>
+        </ul>
+      </nav>
+    </>
   );
 }
 export default Home;

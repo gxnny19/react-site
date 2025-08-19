@@ -4,19 +4,23 @@ import "./App.css";
 import Login from "./compo/Login";
 import Home from "./compo/Home";
 import Layout from "./compo/Layout";
+import MiniBlog from "./compo/mini-blog/MiniBlog";
+import Work1 from "./compo/day01_0807";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>과제방</h1>
+      <h1>장경건 REACT 과제방</h1>
       <BrowserRouter>
         <Routes>
-          <Route path="/react-site/" element={<Layout />} >
-            <Route index element={<Home />} />
-            <Route path="login" element={<Login />} />
-          </Route>
+          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/layout" element={<Layout />} />
+          <Route path="/day01_0807" element={<Day01_0807 />} />
+          <Route path="/miniblog/*" element={<MiniBlog />} />
         </Routes>
       </BrowserRouter>
     </>
