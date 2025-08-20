@@ -1,0 +1,56 @@
+/* 자동차css */
+[class^="car-"] {
+    border: 2px solid green;
+}
+
+.car-a {
+    background-color: aqua;
+}
+
+.car-b {
+    background-color: aquamarine;
+}
+
+.car-c {
+    background-color: yellowgreen;
+}
+
+.car-d {
+    background-color: yellow;
+}
+
+
+
+
+
+
+/* 박스css */
+div {
+    margin: 20px;
+}
+
+.size-small {
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+}
+
+.size-big {
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px dotted orange;
+}
+
+/* 버튼 css */
+.bg-green {
+    background-color: yellow;
+}
+
+.bg-red {
+    background-color: rgb(243, 0, 40);
+}
+
+.bg-blue {
+    background-color: blue;
+}

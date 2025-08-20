@@ -1,0 +1,10 @@
+.work-link {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.work-link:hover {
+  color: #1a73e8; /* 마우스 오버 시 텍스트 색상 */
+}
