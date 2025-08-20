@@ -5,7 +5,7 @@ import Login from "./compo/Login";
 import Home from "./compo/Home";
 import Layout from "./compo/Layout";
 import MiniBlog from "./compo/mini-blog/MiniBlog";
-import Work1 from "./compo/day01_0807";
+import Work1 from "./compo/Work1";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/layout" element={<Layout />} />
-          <Route path="/day01_0807" element={<Day01_0807 />} />
+          <Route path="/work1" element={<Work1 />} />
           <Route path="/miniblog/*" element={<MiniBlog />} />
         </Routes>
       </BrowserRouter>
