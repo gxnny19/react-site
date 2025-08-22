@@ -9,7 +9,7 @@ function MiniBlog() {
 
       
       <a
-        href="http://localhost:5173" 
+        href="" 
         target="_blank"
         rel="noopener noreferrer"
         style={{
