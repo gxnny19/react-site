@@ -9,7 +9,7 @@ function Day3_02() {
 
   return (
     <WorkLayout title="📘 Day3-02 과제">
-      <p>Day3-02 과제 내용이 여기에 들어갑니다.</p>
+      
       <Comment />
       <CommentList />
     </WorkLayout>
