@@ -1,15 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import vue from '@vitejs/plugin-vue'
 
-// https://vite.dev/config/
-export default defineConfig(({ mode }) => {
-  return {
-    plugins: [react()],
-    base: mode === 'production' ? '/react-site/' : '/',
-  }
+export default defineConfig({
+  plugins: [vue()],
+  base: '/react-site/', 
 })
-
-// export default defineConfig({
-//   base: '/react-site/',
-//   plugins: [react()],
-// })
